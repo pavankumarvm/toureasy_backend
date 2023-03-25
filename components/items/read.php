@@ -2,16 +2,15 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-include_once '../config/Database.php';
-include_once '../class/Items.php';
+include_once '../../config/database_config.php';
+include_once '../../models/Items.php';
 
 $database = new Database();
 $db = $database->getConnection();
- 
+
 $items = new Items($db);
 
 $items->id = (isset($_GET['id']) && $_GET['id']) ? $_GET['id'] : '0';
-
 $result = $items->read();
 
 if($result->num_rows > 0){    
