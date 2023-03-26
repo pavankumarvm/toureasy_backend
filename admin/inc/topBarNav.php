@@ -1,8 +1,8 @@
 <style>
   .user-img{
         position: absolute;
-        height: 27px;
-        width: 27px;
+        height: 30px;
+        width: 30px;
         object-fit: cover;
         left: -7%;
         top: -12%;
@@ -12,7 +12,7 @@
   }
 </style>
 <!-- Navbar -->
-      <nav class="main-header navbar navbar-expand navbar-dark border border-light border-top-0  border-left-0 border-right-0 navbar-light text-sm">
+      <nav class="main-header navbar navbar-expand-md navbar-dark border border-light border-top-0  border-left-0 border-right-0 navbar-light text-sm">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           

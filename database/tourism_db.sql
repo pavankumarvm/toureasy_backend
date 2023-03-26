@@ -133,8 +133,8 @@ CREATE TABLE `system_info` (
 --
 
 INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
-(1, 'name', 'Tourism Management System'),
-(6, 'short_name', 'TMS-PHP'),
+(1, 'name', 'Tourism Recommendation System'),
+(6, 'short_name', 'Toureasy'),
 (11, 'logo', 'uploads/1623978900_masskara.png'),
 (13, 'user_avatar', 'uploads/user_avatar.jpg'),
 (14, 'cover', 'uploads/1624082100_The_Ruins_in_Talisay,_Negros_Occidental_at_Dusk.jpg');
