@@ -9,10 +9,10 @@
 </style>
 <!-- Masthead-->
 <header class="masthead">
-	<div class="container">
-		<div class="masthead-subheading">Welcome To TMS- Site</div>
-		<div class="masthead-heading text-uppercase">Explore our Tour Packages</div>
-		<a class="btn btn-primary btn-xl text-uppercase" href="#home">View Tours</a>
+	<div class="container py-5">
+		<div class="masthead-subheading">Welcome To TourEasy</div>
+		<div class="masthead-heading text-uppercase">Experience the Best Tour to Every Place With Ease</div>
+		<a class="btn btn-primary btn-xl text-uppercase" href="#home">Explore</a>
 	</div>
 </header>
 <!-- Services-->
@@ -85,26 +85,19 @@
 		<div>
 			<div class="card w-100">
 				<div class="card-body">
-					<?php echo file_get_contents(base_app.'about.html') ?>
+					<?php include_once 'about.php' ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 <!-- Contact-->
-<section class="page-section" id="contact">
+<section class="page-section" id="contact" style="background-image: url(<?php echo base_url ?>assets/img/map-image.png);">
 	<div class="container">
 		<div class="text-center">
 			<h2 class="section-heading text-uppercase">Contact Us</h2>
 			<h3 class="section-subheading text-muted">Send us a message for inquiries.</h3>
 		</div>
-		<!-- * * * * * * * * * * * * * * *-->
-		<!-- * * SB Forms Contact Form * *-->
-		<!-- * * * * * * * * * * * * * * *-->
-		<!-- This form is pre-integrated with SB Forms.-->
-		<!-- To make this form functional, sign up at-->
-		<!-- https://startbootstrap.com/solution/contact-forms-->
-		<!-- to get an API token!-->
 		<form id="contactForm" >
 			<div class="row align-items-stretch mb-5">
 				<div class="col-md-6">

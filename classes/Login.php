@@ -54,6 +54,7 @@ class Login extends DBConnection
 			$resp['status'] = 'success';
 		} else {
 			$resp['status'] = 'incorrect';
+			$resp['last_qry'] = "SELECT * from users where username = '$username' and password = md5('$password') ";
 		}
 		if ($this->conn->error) {
 			$resp['status'] = 'failed';
